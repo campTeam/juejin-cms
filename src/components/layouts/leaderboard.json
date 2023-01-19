@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_layouts_leaderboards",
+  "info": {
+    "displayName": "LeaderboardItem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "writer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::writer.writer"
+    }
+  }
+}
