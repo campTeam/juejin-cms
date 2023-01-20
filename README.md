@@ -26,5 +26,5 @@ yarn develop
 ```
 
 > 管理账号： example@qq.com
-> 
+>
 > 管理密码： Ab123456
