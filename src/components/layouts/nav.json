@@ -16,6 +16,10 @@
     "link": {
       "type": "string",
       "required": true
+    },
+    "inSite": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
