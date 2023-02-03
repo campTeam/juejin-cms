@@ -25,11 +25,11 @@
     "motto": {
       "type": "text"
     },
-    "article": {
+    "articles": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::article.article",
-      "inversedBy": "writers"
+      "mappedBy": "writer"
     }
   }
 }

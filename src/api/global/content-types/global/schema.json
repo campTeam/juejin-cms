@@ -45,6 +45,11 @@
       "type": "component",
       "repeatable": true,
       "component": "layouts.ad"
+    },
+    "defaultSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "config.seo"
     }
   }
 }

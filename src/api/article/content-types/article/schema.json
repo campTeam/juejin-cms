@@ -24,10 +24,6 @@
       "type": "richtext",
       "required": true
     },
-    "slug": {
-      "type": "uid",
-      "targetField": "title"
-    },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
@@ -42,11 +38,11 @@
         "images"
       ]
     },
-    "writers": {
+    "writer": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::writer.writer",
-      "mappedBy": "article"
+      "inversedBy": "articles"
     },
     "isAd": {
       "type": "boolean",
@@ -56,6 +52,16 @@
     "time": {
       "type": "datetime",
       "required": true
+    },
+    "articleSEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "config.seo"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "config.tag"
     }
   }
 }
