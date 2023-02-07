@@ -53,15 +53,11 @@
       "type": "datetime",
       "required": true
     },
-    "articleSEO": {
-      "type": "component",
-      "repeatable": false,
-      "component": "config.seo"
-    },
     "tags": {
       "type": "component",
       "repeatable": true,
-      "component": "config.tag"
+      "component": "config.tag",
+      "max": 5
     }
   }
 }
