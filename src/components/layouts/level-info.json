@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_layouts_level_infos",
+  "info": {
+    "displayName": "LevelItem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "level": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::level.level"
+    }
+  }
+}

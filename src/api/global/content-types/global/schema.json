@@ -50,6 +50,11 @@
       "type": "component",
       "repeatable": false,
       "component": "config.seo"
+    },
+    "level": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layouts.level-info"
     }
   }
 }

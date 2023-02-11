@@ -4,7 +4,8 @@
   "info": {
     "singularName": "writer",
     "pluralName": "writers",
-    "displayName": "Writer"
+    "displayName": "Writer",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,11 +17,12 @@
       "required": true
     },
     "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "motto": {
       "type": "text"
@@ -30,6 +32,12 @@
       "relation": "oneToMany",
       "target": "api::article.article",
       "mappedBy": "writer"
+    },
+    "level": {
+      "type": "integer",
+      "required": true,
+      "default": 1,
+      "max": 7
     }
   }
 }
